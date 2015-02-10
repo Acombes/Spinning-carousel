@@ -1,0 +1,58 @@
+* {
+    box-sizing: border-box;
+}
+
+.carouspin {
+    height: 300px;
+    width: 300px;
+    margin: auto;
+    
+    transform-style: preserve-3d;
+    transform-origin: center center 0;
+
+    transition: transform 1s linear;
+}
+
+.carouspin:before {
+  content: "";
+  display: block;
+  width: 6px;
+  height: 6px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin: -3px 0 0 -3px;
+  background: red;
+}
+
+.slide {
+    background: blue;
+    border: 1px solid green;
+    position: absolute;
+    backface-visibility: hidden;
+
+    overflow: hidden;
+    height: 100%;
+    width: 100%;
+}
+
+.slide-1  { transform: rotateY( 0deg )   translate3d(0, 0, 461px ); }
+.slide-2  { transform: rotateY( 36deg )  translate3d(0, 0, 461px ); }
+.slide-3  { transform: rotateY( 72deg )  translate3d(0, 0, 461px ); }
+.slide-4  { transform: rotateY( 108deg ) translate3d(0, 0, 461px ); }
+.slide-5  { transform: rotateY( 144deg ) translate3d(0, 0, 461px ); }
+.slide-6  { transform: rotateY( 180deg ) translate3d(0, 0, 461px ); }
+.slide-7  { transform: rotateY( 216deg ) translate3d(0, 0, 461px ); }
+.slide-8  { transform: rotateY( 252deg ) translate3d(0, 0, 461px ); }
+.slide-9  { transform: rotateY( 288deg ) translate3d(0, 0, 461px ); }
+.slide-10 { transform: rotateY( 324deg ) translate3d(0, 0, 461px ); }
+
+
+/* Non essential style */
+#carouspin-1 {
+    transition-duration: .5s;
+}
+
+#carouspin-2 {
+    transition-duration: 1s;
+}
